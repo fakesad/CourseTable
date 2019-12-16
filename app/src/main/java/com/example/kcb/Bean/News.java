@@ -2,9 +2,7 @@ package com.example.kcb.Bean;
 
 import android.graphics.Bitmap;
 
-/**
- * Created by ts on 18-8-20.
- */
+
 
 public class News {
     private Bitmap news_img;

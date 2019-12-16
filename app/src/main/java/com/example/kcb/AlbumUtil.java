@@ -106,11 +106,11 @@ public class AlbumUtil {
         paint.setColor(color);
 
         // 以下有两种方法画圆,drawRounRect和drawCircle
-        // canvas.drawRoundRect(rectF, roundPx, roundPx, paint);
+
         // 画圆角矩形，第一个参数为图形显示区域，第二个参数和第三个参数分别是水平圆角半径和垂直圆角半径。
         canvas.drawCircle(roundPx, roundPx, roundPx, paint);
 
-        // 设置两张图片相交时的模式,参考http://trylovecatch.iteye.com/blog/1189452
+
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
         //以Mode.SRC_IN模式合并bitmap和已经draw了的Circle
         canvas.drawBitmap(bitmap, src, dst, paint);

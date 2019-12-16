@@ -29,7 +29,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="用户名：："
-            android:textColor="#ffb6c1"
+            android:textColor="#00BCD4"
             android:gravity="center"/>
         <EditText
             android:id="@+id/add_theme"
@@ -47,7 +47,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="密码："
-            android:textColor="#ffb6c1"
+            android:textColor="#00BCD4"
             android:gravity="center"/>
         <EditText
             android:id="@+id/add_main"

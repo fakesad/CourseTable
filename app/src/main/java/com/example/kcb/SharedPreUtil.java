@@ -3,13 +3,7 @@ package com.example.kcb;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-/**
- * Created by ts on 18-8-21.
- */
 
-/**
- * 用于存储用户登录状态以及退出登录的功能
- */
 public class SharedPreUtil {
     private static final String FILE_NAME = "user_login";
     //存储用户登录信息（用户名）
@@ -18,11 +12,7 @@ public class SharedPreUtil {
     public static final String IS_LOGIN = "isLogin";
 
 
-    /**
-     * @param context
-     * @param key
-     * @param object
-     */
+
     public static void setParam(Context context, String key, Object object) {
 
         String type = object.getClass().getSimpleName();
@@ -46,12 +36,6 @@ public class SharedPreUtil {
     }
 
 
-    /**
-     * @param context
-     * @param key
-     * @param defaultObject
-     * @return
-     */
     public static Object getParam(Context context, String key, Object defaultObject) {
         String type = defaultObject.getClass().getSimpleName();
         SharedPreferences sp = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
@@ -71,10 +55,7 @@ public class SharedPreUtil {
         return null;
     }
 
-    /**
-     * @param context
-     * @param key
-     */
+
     public static void removeParam(Context context, String key) {
         SharedPreferences sp = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
